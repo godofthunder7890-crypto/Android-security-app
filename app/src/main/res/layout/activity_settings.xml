@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="⚙️ API Configuration" android:textColor="#FFFFFF"
+            android:textSize="22sp" android:textStyle="bold"
+            android:layout_marginTop="24dp" android:layout_marginBottom="24dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/glass_card_bg" android:padding="20dp"
+            android:orientation="vertical" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Telegram Bot Token" android:textColor="#B3FFFFFF" android:textSize="12sp"/>
+            <EditText android:id="@+id/etTelegramToken"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="1234567890:AAF..." android:textColor="#FFFFFF"
+                android:textColorHint="#60FFFFFF" android:inputType="textPassword"
+                android:backgroundTint="#33FFFFFF"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Telegram Chat ID" android:textColor="#B3FFFFFF"
+                android:textSize="12sp" android:layout_marginTop="16dp"/>
+            <EditText android:id="@+id/etTelegramChatId"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="-100123456789" android:textColor="#FFFFFF"
+                android:textColorHint="#60FFFFFF" android:inputType="number"
+                android:backgroundTint="#33FFFFFF"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Gemini API Key" android:textColor="#B3FFFFFF"
+                android:textSize="12sp" android:layout_marginTop="16dp"/>
+            <EditText android:id="@+id/etGeminiKey"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="AIza..." android:textColor="#FFFFFF"
+                android:textColorHint="#60FFFFFF" android:inputType="textPassword"
+                android:backgroundTint="#33FFFFFF"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Save Settings" android:textColor="#FFFFFF"
+            android:background="@drawable/btn_glass"/>
+    </LinearLayout>
+</ScrollView>

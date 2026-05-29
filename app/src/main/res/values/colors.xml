@@ -1,0 +1,13 @@
+<resources>
+    <color name="glass_bg">#1AFFFFFF</color>
+    <color name="glass_border">#33FFFFFF</color>
+    <color name="accent_cyan">#00E5FF</color>
+    <color name="accent_purple">#7C4DFF</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    <color name="bg_dark">#0D0D1A</color>
+    <color name="bg_gradient_start">#0A0A1E</color>
+    <color name="bg_gradient_end">#1A0A2E</color>
+    <color name="success_green">#00E676</color>
+    <color name="danger_red">#FF1744</color>
+</resources>

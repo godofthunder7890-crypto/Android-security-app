@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛡 Security Shield"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Device Protection"
+            android:textColor="#B3FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Service Toggle Card -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/glass_card_bg" android:padding="20dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Protection Status" android:textColor="#FFFFFF"
+                    android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Enable monitoring service" android:textColor="#B3FFFFFF"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <Switch android:id="@+id/switchService"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:thumbTint="#00E5FF" android:trackTint="#33FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Threshold Card -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/glass_card_bg" android:padding="20dp"
+            android:orientation="vertical" android:layout_marginBottom="16dp">
+            <TextView android:id="@+id/tvThreshold"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Failed Attempts Threshold: 3"
+                android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+            <SeekBar android:id="@+id/sliderThreshold"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:max="19" android:progress="2"
+                android:progressTint="#00E5FF" android:thumbTint="#00E5FF"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="1 attempt ←————————————→ 20 attempts"
+                android:textColor="#80FFFFFF" android:textSize="11sp"
+                android:gravity="center" android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- AI Toggle Card -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/glass_card_bg" android:padding="20dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🤖 AI Analysis (Gemini)" android:textColor="#FFFFFF"
+                    android:textSize="15sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Hinglish incident reports" android:textColor="#B3FFFFFF"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <Switch android:id="@+id/switchAI"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:thumbTint="#7C4DFF" android:trackTint="#33FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <Button android:id="@+id/btnSetup"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="👤  Register Owner Face"
+            android:textColor="#FFFFFF" android:background="@drawable/btn_glass"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btnViewLogs"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="📋  View Incident Logs"
+            android:textColor="#FFFFFF" android:background="@drawable/btn_glass"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btnSettings"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="⚙️  Configure API Keys"
+            android:textColor="#FFFFFF" android:background="@drawable/btn_glass"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

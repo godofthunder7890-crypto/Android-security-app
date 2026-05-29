@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Security Shield</string>
+    <string name="device_admin_description">Monitors failed unlock attempts to detect unauthorized access</string>
+</resources>

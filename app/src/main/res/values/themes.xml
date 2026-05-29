@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.SecurityShield" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorPrimaryVariant">@color/accent_purple</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_gradient_start</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+    </style>
+
+    <style name="GlassCard">
+        <item name="android:background">@drawable/glass_card_bg</item>
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>
