@@ -18,6 +18,19 @@ android {
         versionName = "1.0"
     }
 
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        debug {
+            isMinifyEnabled = false
+        }
+    }
+
     buildFeatures {
         viewBinding = true
         buildConfig = true
@@ -34,7 +47,7 @@ android {
 }
 
 dependencies {
-    // Core
+    // Core Android
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
